@@ -1,0 +1,50 @@
+{
+  "name": "dsh-local-pair",
+  "version": "0.3.3",
+  "description": "Pair Pallas Agent and operate your iPhone from DeepSeek Harness",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "*.js",
+    "cordis.patch.yml",
+    "bin/pallas-mesh-node",
+    "mac/dsh-installer-service",
+    "mac/Kit/ScreenRunner.ipa",
+    "mac/Kit/RunnerHost.json",
+    "mac/Kit/SHA256SUMS",
+    "mac/metadata.json",
+    "mac/ThirdPartyNotices.txt",
+    "mac/DependencyVersions.lock"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4",
+    "ssh2": "1.17.0"
+  },
+  "bundleDependencies": [
+    "ssh2",
+    "qrcode"
+  ],
+  "devDependencies": {
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1",
+    "jsqr": "^1.4.0",
+    "pngjs": "^5.0.0"
+  },
+  "private": true
+}
