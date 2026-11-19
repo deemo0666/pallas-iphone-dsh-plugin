@@ -12,13 +12,17 @@
   "files": [
     "*.js",
     "cordis.patch.yml",
+    "LICENSE.md",
     "bin/pallas-mesh-node",
+    "bin/ThirdPartyNotices.txt",
     "mac/dsh-installer-service",
     "mac/Kit/ScreenRunner.ipa",
     "mac/Kit/RunnerHost.json",
     "mac/Kit/SHA256SUMS",
     "mac/metadata.json",
+    "mac/LICENSE.md",
     "mac/ThirdPartyNotices.txt",
+    "mac/InstallerServiceSource.zip",
     "mac/DependencyVersions.lock"
   ],
   "dsh": {
@@ -29,7 +33,7 @@
       "platform": "web"
     }
   },
-  "license": "Apache-2.0",
+  "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "test": "node --test test/*.test.js"
   },
