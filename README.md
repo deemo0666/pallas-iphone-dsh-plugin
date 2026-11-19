@@ -48,3 +48,7 @@ bash Tools/HostPairing/package-mac.sh /path/to/Pallas-Runner-macos-kit.zip dist
 ```
 
 Runner、原生安装服务和其依赖源码见 [Pallas iPhone Runner](https://github.com/deemo0666/pallas-iphone-runner)。
+
+## 许可
+
+项目自有源码可供获准访问者查阅，版权所有。官方插件包的使用授权见[项目许可](LICENSE.md)。插件包内的 Runner 和安装服务适用 `mac/LICENSE.md`，安装服务的 LGPL 源码和重新链接说明在 `mac/InstallerServiceSource.zip`，第三方许可见 `mac/ThirdPartyNotices.txt` 和 `bin/ThirdPartyNotices.txt`。
