@@ -1,19 +1,21 @@
-# Pallas iPhone 操控 DSH 插件许可
+# Pallas iPhone Control DSH Plugin License
 
 Copyright © 2026 deemo0666. All rights reserved.
 
-## 适用范围
+A Chinese translation is in [LICENSE.zh-CN.md](LICENSE.zh-CN.md). If the two differ, this English version governs.
 
-本许可适用于 deemo0666 拥有版权、随本许可提供的插件源码、文档、品牌素材和插件包。插件包内的 Pallas iPhone Runner 和 macOS 安装服务（`mac/` 目录）适用随附的 `mac/LICENSE.md`。第三方材料和已按其他条款有效授权的版本，分别适用其各自的许可。
+## Scope
 
-## 源码查阅
+This license covers the plugin source code, documentation, brand assets and plugin packages that deemo0666 owns the copyright to and provides with this license. The Pallas iPhone Runner and macOS installer service inside the plugin package (the `mac/` folder) are covered by the included `mac/LICENSE.md`. Third-party material and releases validly licensed under other terms are each governed by their own licenses.
 
-获准访问仓库或取得源码包的人员，可以下载、阅读和审查源码。编译、修改、复用或再分发源码和衍生作品，须有版权所有人的书面授权，或由本许可、其他有效许可、适用法律或托管平台条款另行允许。
+## Reviewing the source
 
-## 官方插件包
+People granted access to the repository or given a source package may download, read and review the source. Compiling, modifying, reusing or redistributing the source or derivative works requires written permission from the copyright holder, unless this license, another valid license, applicable law or the hosting platform's terms allow it.
 
-获准取得官方插件包的人员，可以把它安装到自己拥有或管理的电脑上的 DSH 中使用，并按随包说明配置。转授权、再分发插件包或另行使用 Pallas 品牌素材，须有版权所有人的书面授权，或由其他有效许可或适用法律另行允许。
+## Official plugin package
 
-## 第三方组件
+People who obtain the official plugin package may install it into DSH on computers they own or manage and configure it as described in the included instructions. Sublicensing, redistributing the plugin package or otherwise using the Pallas brand assets requires written permission from the copyright holder, unless another valid license or applicable law allows it.
 
-插件包随附的第三方组件适用其原许可：`node_modules` 中的依赖附有各自的许可文件，`bin/pallas-mesh-node` 的第三方许可见 `bin/ThirdPartyNotices.txt`，安装服务的第三方许可见 `mac/ThirdPartyNotices.txt`。安装服务静态链接的 LGPL 组件，其源码和重建、重新链接说明见 `mac/InstallerServiceSource.zip`。
+## Third-party components
+
+Third-party components included in the plugin package are governed by their original licenses: dependencies in `node_modules` carry their own license files, third-party licenses for `bin/pallas-mesh-node` are in `bin/ThirdPartyNotices.txt`, and those for the installer service are in `mac/ThirdPartyNotices.txt`. Source and rebuild and relinking instructions for the LGPL components statically linked into the installer service are in `mac/InstallerServiceSource.zip`.
