@@ -4,17 +4,17 @@
 
 在 DSH Web 里为已经装好 Pallas Agent 的 iPhone 配对和安装操控组件。配对后，可以在 DSH 对话中读屏、点按和打开 App。
 
-[下载 macOS 插件 v0.3.3（ZIP）](https://github.com/deemo0666/pallas-iphone-dsh-plugin/releases/download/v0.3.3/dsh-local-pair-0.3.3-macos.zip)
+[下载 macOS 插件 v0.3.4（ZIP）](https://github.com/deemo0666/pallas-iphone-dsh-plugin/releases/download/v0.3.4/dsh-local-pair-0.3.4-macos.zip)
 
 ## 安装到 DSH
 
-需要已配置的 DSH Web 和 macOS 13 或以上。插件中的 iPhone 安装包是 Runner `1.0 (1)`。iPhone 需先装带「允许电脑操控」入口的 Pallas Agent `0.5.1`。使用原账号侧载的 Pallas Agent 需匹配 `0.5.1 (18)` 和原安装器的共享权限。
+需要已配置的 DSH Web 和 macOS 13 或以上。插件中的 iPhone 安装包是 Runner `1.1 (2)`。iPhone 需先装带「允许电脑操控」入口的 Pallas Agent `0.5.1` 或更新版本。使用原账号侧载的 Pallas Agent 需为 `0.5.1 (18)` 或更新版本，并带原安装器的共享权限。
 
 ```sh
-unzip dsh-local-pair-0.3.3-macos.zip -d pallas-dsh-0.3.3
-cd pallas-dsh-0.3.3
+unzip dsh-local-pair-0.3.4-macos.zip -d pallas-dsh-0.3.4
+cd pallas-dsh-0.3.4
 shasum -a 256 -c SHA256SUMS
-dsh plugin --profile web add ./dsh-local-pair-0.3.3-macos.tgz
+dsh plugin --profile web add ./dsh-local-pair-0.3.4-macos.tgz
 ```
 
 启动或重启 `dsh web`，从启动输出的 `127.0.0.1` 地址打开 DSH。侧栏有「Pallas iPhone 操控」，也可以从「设置 → 内置插件 → Pallas iPhone」进入。
@@ -42,7 +42,7 @@ npm ci --prefix Tools/HostPairing --ignore-scripts
 npm test --prefix Tools/HostPairing
 ```
 
-从 [Runner Release](https://github.com/deemo0666/pallas-iphone-runner/releases/tag/v1.0.0) 下载 `Pallas-Runner-macos-kit.zip`，然后在 Mac 上打包。
+从 [Runner Release](https://github.com/deemo0666/pallas-iphone-runner/releases/tag/v1.1.0) 下载 `Pallas-Runner-macos-kit.zip`，然后在 Mac 上打包。
 
 ```sh
 mkdir -p dist

@@ -4,17 +4,17 @@ English · [简体中文](README.zh-CN.md)
 
 Pair with, and install the control component on, an iPhone that already has [Pallas Agent](https://github.com/deemo0666/pallas-agent), right from DSH Web. Once paired, a DSH chat can read the iPhone's screen, tap and open apps.
 
-[Download the macOS plugin v0.3.3 (ZIP)](https://github.com/deemo0666/pallas-iphone-dsh-plugin/releases/download/v0.3.3/dsh-local-pair-0.3.3-macos.zip)
+[Download the macOS plugin v0.3.4 (ZIP)](https://github.com/deemo0666/pallas-iphone-dsh-plugin/releases/download/v0.3.4/dsh-local-pair-0.3.4-macos.zip)
 
 ## Install into DSH
 
-Requires a configured DSH Web and macOS 13 or later. The iPhone package inside the plugin is Runner `1.0 (1)`. The iPhone first needs Pallas Agent `0.5.1` with the **Allow Computer Control** entry. A Pallas Agent sideloaded with the original account must be `0.5.1 (18)` with the original installer's shared entitlements.
+Requires a configured DSH Web and macOS 13 or later. The iPhone package inside the plugin is Runner `1.1 (2)`. The iPhone needs Pallas Agent `0.5.1` or later with the **Allow Computer Control** entry. A Pallas Agent sideloaded with the original account must be `0.5.1 (18)` or later with the original installer's shared entitlements.
 
 ```sh
-unzip dsh-local-pair-0.3.3-macos.zip -d pallas-dsh-0.3.3
-cd pallas-dsh-0.3.3
+unzip dsh-local-pair-0.3.4-macos.zip -d pallas-dsh-0.3.4
+cd pallas-dsh-0.3.4
 shasum -a 256 -c SHA256SUMS
-dsh plugin --profile web add ./dsh-local-pair-0.3.3-macos.tgz
+dsh plugin --profile web add ./dsh-local-pair-0.3.4-macos.tgz
 ```
 
 Start or restart `dsh web` and open DSH at the `127.0.0.1` address it prints. **Pallas iPhone Control** appears in the sidebar, and also in the plugin settings under **Pallas iPhone**.
@@ -42,7 +42,7 @@ npm ci --prefix Tools/HostPairing --ignore-scripts
 npm test --prefix Tools/HostPairing
 ```
 
-Download `Pallas-Runner-macos-kit.zip` from the [Runner release](https://github.com/deemo0666/pallas-iphone-runner/releases/tag/v1.0.0), then package on a Mac:
+Download `Pallas-Runner-macos-kit.zip` from the [Runner release](https://github.com/deemo0666/pallas-iphone-runner/releases/tag/v1.1.0), then package on a Mac:
 
 ```sh
 mkdir -p dist
